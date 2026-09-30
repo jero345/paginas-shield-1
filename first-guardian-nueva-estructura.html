@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First Guardian Complaints | Banton Group</title>
+<meta name="description" content="Lost superannuation in the First Guardian Master Fund? Free assessment, nothing to pay upfront, no win, no fee.">
+<meta name="color-scheme" content="light">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+<style>
+/*
+  Design tokens
+  Radius rule: shells 26px, cards 16-28px, inputs 10px, every button and chip is a full pill.
+  One accent (signal amber) for primary CTAs and key figures. Green and red are semantic only
+  (AFCA is free / scam warning).
+*/
+:root{
+  --navy-950:#0B1A30; --navy-900:#0F2340; --navy-800:#132946; --navy-700:#1C3A64; --navy-600:#2A4E80;
+  --ink:#0E1A2B; --muted:#4E5A6C; --soft:#6A7587;
+  --line:#DCE2EB; --line-soft:#E8ECF2;
+  --bg:#FAFBFC; --tint:#F1F4F8; --surface:#FFFFFF;
+  --accent:#F2B544; --accent-hover:#F6C565; --accent-ink:#8A5800; --accent-wash:#FDF3DF;
+  --green:#1F6B4A; --green-ink:#174F37; --green-soft:#E9F4EE; --green-line:#CBE3D5;
+  --red:#A12D2D; --red-ink:#7E2222; --red-soft:#FBEEEC; --red-line:#F0D0CB;
+  --on-navy:#D5DDE9; --on-navy-soft:#A9B6C9;
+  --ease:cubic-bezier(.16,1,.3,1);
+  --spring:cubic-bezier(.32,.72,0,1);
+  --r-shell:26px; --r-core:20px; --r-card:16px; --r-input:10px;
+  --shadow:0 1px 2px rgba(15,35,64,.05), 0 14px 34px -14px rgba(15,35,64,.20);
+  --shadow-lg:0 34px 70px -34px rgba(11,26,48,.60);
+  --z-header:20; --z-mbar:30; --z-grain:40; --z-skip:50;
+  --gutter:32px; --header-h:68px;
+}
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{background:var(--bg);-webkit-text-size-adjust:100%}
+body{font-family:'Geist',system-ui,sans-serif;font-size:17px;line-height:1.6;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:var(--z-grain);opacity:.035;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img,svg{display:block;max-width:100%}
+a{color:var(--navy-700)}
+h1,h2,h3{color:var(--navy-900);font-weight:600;text-wrap:balance}
+p{text-wrap:pretty}
+strong{font-weight:600}
+:focus-visible{outline:3px solid var(--navy-600);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 var(--gutter)}
+section[id]{scroll-margin-top:calc(var(--header-h) + 20px)}
+.mono{font-family:'Geist Mono',ui-monospace,monospace;font-variant-numeric:tabular-nums}
+
+.skip{position:absolute;left:16px;top:-80px;z-index:var(--z-skip);background:var(--navy-900);color:#fff;padding:12px 18px;border-radius:999px;text-decoration:none;font-weight:600;transition:top .3s var(--ease)}
+.skip:focus{top:12px}
+
+/* type scale */
+h2{font-size:clamp(2rem,1.25rem + 2.3vw,3rem);line-height:1.06;letter-spacing:-.032em}
+h3{font-size:19px;line-height:1.3;letter-spacing:-.012em}
+.label{display:block;font-size:15px;font-weight:600;color:var(--accent-ink);margin-bottom:14px;letter-spacing:-.005em}
+.lead{font-size:19px;line-height:1.6;color:var(--muted);max-width:62ch;margin-top:18px}
+.fine{font-size:14px;color:var(--soft)}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:14px;border:0;border-radius:999px;font:inherit;font-weight:600;font-size:16px;line-height:1;text-decoration:none;white-space:nowrap;cursor:pointer;-webkit-tap-highlight-color:transparent;transition:transform .4s var(--spring),background-color .25s var(--ease),box-shadow .4s var(--ease)}
+.btn:active{transform:scale(.98)}
+.btn-primary{background:var(--accent);color:var(--navy-900);padding:7px 7px 7px 24px;box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 12px 26px -12px rgba(160,104,8,.65)}
+.btn-primary:hover{background:var(--accent-hover);box-shadow:inset 0 1px 0 rgba(255,255,255,.55),0 16px 30px -12px rgba(160,104,8,.7)}
+.btn-ic{width:36px;height:36px;flex:none;border-radius:50%;background:var(--navy-900);color:var(--accent);display:grid;place-items:center;font-size:17px;transition:transform .5s var(--spring)}
+.btn:hover .btn-ic{transform:translateX(3px) scale(1.06)}
+.btn-sm{font-size:15px;padding:5px 5px 5px 18px;gap:10px}
+.btn-sm .btn-ic{width:30px;height:30px;font-size:15px}
+.btn-lg{font-size:17px;padding:8px 8px 8px 28px}
+.btn-lg .btn-ic{width:42px;height:42px;font-size:19px}
+.btn-quiet{background:var(--surface);color:var(--green-ink);padding:13px 18px 13px 20px;box-shadow:inset 0 0 0 1px var(--green-line)}
+.btn-quiet:hover{background:#fff;box-shadow:inset 0 0 0 1.5px var(--green)}
+.btn-quiet i{font-size:16px;transition:transform .5s var(--spring)}
+.btn-quiet:hover i{transform:translate(2px,-2px)}
+.link-2{display:inline-flex;align-items:center;gap:8px;color:var(--navy-700);font-weight:500;text-decoration:underline;text-decoration-thickness:1.5px;text-decoration-color:rgba(28,58,100,.3);text-underline-offset:6px;transition:text-decoration-color .25s var(--ease)}
+.link-2:hover{text-decoration-color:currentColor}
+.link-2 i{font-size:16px;transition:transform .5s var(--spring)}
+.link-2:hover i{transform:translateY(2px)}
+.call{display:inline-flex;align-items:center;gap:10px;color:var(--navy-800);font-weight:600;text-decoration:none}
+.call .ph{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--tint);box-shadow:inset 0 0 0 1px var(--line);font-size:16px;transition:transform .5s var(--spring)}
+.call:hover .ph{transform:rotate(-12deg)}
+
+/* double-bezel shell */
+.shell{padding:6px;border-radius:var(--r-shell);background:rgba(15,35,64,.035);box-shadow:inset 0 0 0 1px rgba(15,35,64,.07)}
+.core{background:var(--surface);border-radius:var(--r-core);box-shadow:inset 0 1px 0 #fff,var(--shadow)}
+
+/* top bar and header */
+.topbar{background:var(--navy-950);color:#C9D3E3;font-size:14px}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;min-height:38px;gap:16px}
+.topbar strong{color:#fff}
+.topbar a{color:#C9D3E3;text-decoration:none}
+.topbar a:hover strong{text-decoration:underline;text-underline-offset:4px}
+.header{position:sticky;top:0;z-index:var(--z-header);background:rgba(250,251,252,.82);backdrop-filter:saturate(160%) blur(14px);-webkit-backdrop-filter:saturate(160%) blur(14px);border-bottom:1px solid rgba(15,35,64,.08)}
+.header .wrap{display:flex;align-items:center;justify-content:space-between;gap:28px;height:var(--header-h)}
+.brand{display:flex;flex-direction:column;text-decoration:none;line-height:1.15;white-space:nowrap}
+.brand .name{font-size:19px;font-weight:700;color:var(--navy-900);letter-spacing:-.022em}
+.brand .by{font-size:13px;color:var(--muted)}
+.links{display:flex;gap:4px;align-items:center}
+.links a{position:relative;white-space:nowrap;padding:8px 13px;border-radius:999px;font-size:15px;font-weight:500;color:var(--ink);text-decoration:none;transition:background-color .25s var(--ease),color .25s var(--ease)}
+.links a:hover{background:rgba(15,35,64,.06)}
+.links a[aria-current="true"]{background:var(--navy-800);color:#fff}
+.nav-actions{display:flex;align-items:center;gap:18px}
+.nav-call{display:none}
+
+/* hero */
+.hero{position:relative;overflow:hidden;padding:76px 0 150px;background:
+  radial-gradient(900px 520px at 88% -10%,rgba(42,78,128,.13),transparent 70%),
+  radial-gradient(640px 380px at -8% 52%,rgba(242,181,68,.12),transparent 70%),
+  linear-gradient(180deg,#EDF1F6 0%,var(--bg) 100%)}
+.tag{display:inline-flex;align-items:center;gap:9px;padding:6px 14px 6px 7px;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line),0 4px 14px -8px rgba(15,35,64,.25);font-size:14.5px;font-weight:500;color:var(--navy-700)}
+.tag i{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:var(--tint);font-size:15px}
+.hero h1{margin-top:24px;font-size:clamp(2.45rem,1.15rem + 4.2vw,4.1rem);line-height:1.02;letter-spacing:-.042em;max-width:1080px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:72px;align-items:start;margin-top:40px}
+.sub{font-size:20px;line-height:1.55;color:var(--muted);max-width:56ch}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:34px}
+.assure{list-style:none;padding:8px 28px}
+.assure li{display:flex;align-items:center;gap:16px;padding:18px 0;font-size:19px;font-weight:600;letter-spacing:-.012em;color:var(--navy-900)}
+.assure li+li{border-top:1px solid var(--line-soft)}
+.tick{width:34px;height:34px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--accent-wash);color:var(--accent-ink);font-size:16px;box-shadow:inset 0 0 0 1px rgba(138,88,0,.12)}
+.assure-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px 10px 22px;font-size:15px;color:var(--muted)}
+
+/* the date that matters */
+.date{position:relative;z-index:1;margin-top:-104px}
+.date-card{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:64px;align-items:center;padding:56px 60px;border-radius:28px;color:var(--on-navy);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),var(--shadow-lg);background:
+  radial-gradient(640px 320px at 0% 0%,rgba(255,255,255,.07),transparent 62%),
+  radial-gradient(520px 300px at 100% 100%,rgba(242,181,68,.12),transparent 70%),
+  var(--navy-800)}
+.date-k{display:flex;align-items:center;gap:10px;color:var(--accent);font-weight:600;font-size:15px}
+.date-k i{font-size:19px}
+.date-big{margin-top:16px;font-size:clamp(3.4rem,1.6rem + 5.6vw,6.6rem);font-weight:600;line-height:.95;letter-spacing:-.052em;color:#fff;font-variant-numeric:tabular-nums}
+.date-big .yr{color:var(--accent)}
+.date-body p{font-size:17px;line-height:1.65}
+.date-body .fine{margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12);color:var(--on-navy-soft)}
+
+/* sections */
+.sec{padding:clamp(72px,8vw,112px) 0}
+.sec-head{max-width:760px}
+
+/* how it works */
+.steps{list-style:none;position:relative;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:28px;margin-top:60px}
+.steps::before,.steps::after{content:"";position:absolute;top:25px;left:25px;right:calc((100% - 112px)/5 - 25px);height:2px;border-radius:2px}
+.steps::before{background:var(--line)}
+.steps::after{background:var(--navy-700);transform-origin:left center;transform:scaleX(0);transition:transform 1.5s var(--ease) .15s}
+.steps.is-in::after{transform:scaleX(1)}
+.step{position:relative;z-index:1}
+.step-n{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--surface);color:var(--navy-700);box-shadow:inset 0 0 0 2px var(--navy-700),0 0 0 7px var(--bg);font-family:'Geist Mono',monospace;font-weight:500;font-size:18px;transition:background-color .5s var(--ease),color .5s var(--ease);transition-delay:calc(var(--i) * 260ms + 150ms)}
+.steps.is-in .step-n{background:var(--navy-700);color:#fff}
+.step:last-child .step-n{box-shadow:inset 0 0 0 2px var(--navy-700),0 0 0 7px var(--bg)}
+.step h3{margin-top:24px;font-size:20px}
+.step p{margin-top:8px;font-size:15.5px;line-height:1.55;color:var(--muted)}
+
+/* AFCA is free */
+.free{padding-top:0}
+.free-card{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:36px;align-items:center;padding:36px 40px;border-radius:24px;background:
+  radial-gradient(520px 260px at 0% 0%,rgba(255,255,255,.75),transparent 70%),var(--green-soft);box-shadow:inset 0 0 0 1px var(--green-line)}
+.free-badge{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:#fff;font-size:28px;font-weight:700;letter-spacing:-.03em;box-shadow:0 0 0 8px rgba(31,107,74,.1)}
+.free-card h2{font-size:clamp(1.5rem,1.2rem + 1vw,1.95rem);color:var(--green-ink);letter-spacing:-.025em;line-height:1.15}
+.free-card p{margin-top:10px;color:#29423A;max-width:66ch}
+.free-links{display:flex;flex-direction:column;gap:10px}
+.cta-strip{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px 32px;margin-top:20px;padding:18px 20px 18px 28px;border-radius:999px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line),var(--shadow)}
+.mini-ticks{list-style:none;display:flex;flex-wrap:wrap;gap:8px 26px;font-size:15.5px;font-weight:500;color:var(--navy-800)}
+.mini-ticks li{display:flex;align-items:center;gap:8px}
+.mini-ticks i{color:var(--accent-ink);font-size:15px}
+
+/* situations */
+.when{background:var(--tint)}
+.cases{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;align-items:start;margin-top:48px}
+.case{background:var(--surface);border-radius:var(--r-card);box-shadow:inset 0 0 0 1px var(--line);transition:box-shadow .35s var(--ease),transform .45s var(--spring)}
+.case:hover{transform:translateY(-3px);box-shadow:inset 0 0 0 1px #C3CCD9,var(--shadow)}
+.case[open]{box-shadow:inset 0 0 0 1.5px var(--navy-700),var(--shadow);transform:none}
+.case>summary{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-rows:auto 1fr;gap:22px 12px;min-height:168px;padding:20px 20px 22px;cursor:pointer;list-style:none;border-radius:var(--r-card)}
+.case>summary::-webkit-details-marker,.acc>summary::-webkit-details-marker,.disc>summary::-webkit-details-marker{display:none}
+.case-n{font-size:14px;color:var(--accent-ink);align-self:center}
+.pm{width:32px;height:32px;flex:none;border-radius:50%;display:grid;place-items:center;background:var(--tint);color:var(--navy-800);font-size:15px;transition:transform .5s var(--spring),background-color .3s var(--ease),color .3s var(--ease)}
+details[open]>summary .pm{transform:rotate(45deg);background:var(--navy-800);color:#fff}
+.case-t{grid-column:1/-1;align-self:end;font-size:18px;font-weight:600;line-height:1.28;letter-spacing:-.014em;color:var(--navy-900)}
+.case-body{padding:0 20px 22px}
+.case-body p{padding-top:16px;border-top:1px solid var(--line-soft);font-size:15.5px;line-height:1.55;color:var(--muted)}
+.after-cta{display:flex;flex-wrap:wrap;align-items:center;gap:16px 28px;margin-top:40px}
+
+/* disclosures (where things stand, class actions) */
+.disc{background:var(--surface);border-radius:28px;box-shadow:inset 0 0 0 1px var(--line),var(--shadow)}
+.disc>summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:28px 36px;align-items:end;padding:40px 44px;cursor:pointer;list-style:none;border-radius:28px}
+.disc>summary h2{margin-top:0}
+.toggle{display:inline-flex;align-items:center;gap:12px;padding:7px 7px 7px 22px;border-radius:999px;background:var(--tint);box-shadow:inset 0 0 0 1px var(--line);color:var(--navy-800);font-weight:600;font-size:15.5px;white-space:nowrap;transition:background-color .25s var(--ease),box-shadow .25s var(--ease)}
+.toggle i{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--navy-800);color:#fff;font-size:15px;transition:transform .5s var(--spring)}
+.disc>summary:hover .toggle{background:#E6EBF2}
+.disc[open]>summary .toggle i{transform:rotate(180deg)}
+.t-open{display:none}
+.disc[open]>summary .t-open{display:inline}
+.disc[open]>summary .t-closed{display:none}
+.mini{grid-column:1/-1;list-style:none;position:relative;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;padding-top:6px}
+.mini::before{content:"";position:absolute;top:10px;left:5px;right:5px;height:1px;background:var(--line)}
+.mini li{position:relative;padding-top:24px;font-size:13px;color:var(--soft);line-height:1.35}
+.mini li::before{content:"";position:absolute;top:5px;left:0;width:11px;height:11px;border-radius:50%;background:var(--surface);box-shadow:inset 0 0 0 2px var(--navy-600)}
+.mini li:last-child{color:var(--accent-ink);font-weight:500}
+.mini li:last-child::before{background:var(--accent);box-shadow:inset 0 0 0 2px var(--accent-ink)}
+.disc[open] .mini{display:none}
+.tl{list-style:none;padding:4px 44px 44px}
+.tl li{display:grid;grid-template-columns:200px minmax(0,1fr);gap:0 40px}
+.tl time{padding-top:22px;font-size:14px;font-weight:500;color:var(--accent-ink);text-align:right}
+.tl .tl-c{position:relative;padding:20px 0 26px 34px}
+.tl .tl-c::after{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;background:var(--line)}
+.tl li:first-child .tl-c::after{top:33px}
+.tl li:last-child .tl-c::after{bottom:auto;height:33px}
+.tl .tl-c::before{content:"";position:absolute;z-index:1;left:-7px;top:26px;width:14px;height:14px;border-radius:50%;background:var(--surface);box-shadow:inset 0 0 0 3px var(--navy-700),0 0 0 5px var(--surface)}
+.tl li:last-child .tl-c{padding-bottom:4px}
+.tl li:last-child .tl-c::before{background:var(--accent);box-shadow:inset 0 0 0 3px var(--accent-ink),0 0 0 5px var(--surface)}
+.tl h3{font-size:19px}
+.tl p{margin-top:6px;font-size:16px;color:var(--muted);max-width:62ch}
+.updated{margin-top:18px;padding-left:4px}
+
+/* fees */
+.fees-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:72px;align-items:center}
+.fee-card{position:relative;overflow:hidden;padding:48px;border-radius:28px;color:var(--on-navy);box-shadow:inset 0 1px 0 rgba(255,255,255,.08),var(--shadow-lg);background:
+  radial-gradient(560px 300px at 100% 0%,rgba(242,181,68,.13),transparent 68%),var(--navy-800)}
+.fee-card h2{color:#fff;font-size:clamp(2.1rem,1.5rem + 2vw,2.9rem)}
+.fee-up{margin-top:6px;font-size:21px;font-weight:600;color:var(--accent);letter-spacing:-.012em}
+.figs{display:grid;grid-template-columns:1fr 1fr;margin:32px 0 10px;border-top:1px solid rgba(255,255,255,.14);border-bottom:1px solid rgba(255,255,255,.14)}
+.fig{padding:24px 0}
+.fig+.fig{padding-left:30px;border-left:1px solid rgba(255,255,255,.14)}
+.fig-n{display:block;font-size:clamp(2.7rem,2rem + 2.2vw,3.8rem);font-weight:600;line-height:1;letter-spacing:-.045em;color:#fff;font-variant-numeric:tabular-nums}
+.fig-c{display:block;margin-top:10px;font-size:14.5px;color:var(--on-navy-soft)}
+.fee-list{list-style:none}
+.fee-list li{display:grid;grid-template-columns:22px minmax(0,1fr);gap:14px;padding:13px 0;font-size:16px;line-height:1.5}
+.fee-list li+li{border-top:1px solid rgba(255,255,255,.1)}
+.fee-list i{margin-top:3px;color:var(--accent);font-size:17px}
+.fee-list strong{color:#F7D899}
+.fee-note p{margin-top:16px;color:var(--muted);max-width:58ch}
+.fee-note h2{margin-bottom:6px}
+.fee-note .btn{margin-top:30px}
+
+/* class actions */
+.ca{padding-top:0}
+.ca .disc>summary{grid-template-columns:auto minmax(0,1fr) auto;align-items:center;padding:30px 36px}
+.ca-ic{width:60px;height:60px;border-radius:18px;display:grid;place-items:center;background:var(--tint);box-shadow:inset 0 0 0 1px var(--line);color:var(--navy-700);font-size:28px}
+.ca .label{margin-bottom:6px}
+.ca h2{font-size:clamp(1.6rem,1.2rem + 1.3vw,2.2rem)}
+.ca-body{padding:0 36px 36px}
+.ca-body .lead{margin-top:0;font-size:17.5px}
+.ca-card{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:26px}
+.ca-card div{padding:20px 22px;border-radius:var(--r-card);background:var(--tint);box-shadow:inset 0 0 0 1px var(--line-soft)}
+.ca-card dt{font-size:13.5px;font-weight:600;color:var(--accent-ink);margin-bottom:6px}
+.ca-card dd{font-size:16px;color:var(--navy-900);font-weight:500;line-height:1.45}
+.ca-card dd em{font-style:italic}
+.ca-body .fine{margin-top:16px}
+
+/* scam warning */
+.scam-sec{padding:0 0 clamp(72px,8vw,112px)}
+.scam{display:grid;grid-template-columns:auto minmax(0,1fr);gap:24px;align-items:start;padding:26px 32px;border-radius:22px;background:var(--red-soft);box-shadow:inset 0 0 0 1px var(--red-line)}
+.scam-ic{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#fff;font-size:22px}
+.scam h2{font-size:21px;letter-spacing:-.018em;color:var(--red-ink);line-height:1.3}
+.scam p{margin-top:6px;font-size:15.5px;line-height:1.6;color:#4A2626;max-width:none}
+.scam a{color:var(--red-ink);font-weight:600;white-space:nowrap}
+
+/* free assessment form slot */
+.reg{background:var(--tint)}
+.reg-grid{display:grid;grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:72px;align-items:start}
+.reg-copy .lead+.lead{margin-top:14px}
+.reg-copy .call{margin-top:32px}
+.slot{padding:32px}
+.slot-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px 6px 10px;border-radius:999px;background:var(--accent-wash);box-shadow:inset 0 0 0 1px rgba(138,88,0,.18);color:var(--accent-ink);font-size:13.5px;font-weight:600}
+.slot-note{margin-top:12px;font-size:15px;color:var(--muted)}
+.ghost{display:grid;gap:18px;margin:28px 0 30px;padding:24px;border-radius:var(--r-card);border:1.5px dashed #C3CCD9}
+.g-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.g-f{display:grid;gap:8px}
+.g-l{height:10px;width:42%;border-radius:999px;background:#DDE3EC}
+.g-in{height:44px;border-radius:var(--r-input);background:var(--tint);box-shadow:inset 0 0 0 1px var(--line)}
+.g-in.tall{height:84px}
+.slot .btn[aria-disabled="true"]{opacity:.55;cursor:not-allowed;box-shadow:none}
+
+/* questions */
+.faq-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.5fr);gap:72px;align-items:start}
+.faq-side{position:sticky;top:calc(var(--header-h) + 32px)}
+.faq-side .btn{margin-top:30px}
+.faq-side .call{margin-top:18px;display:flex}
+.acc-list{border-top:1px solid var(--line)}
+.acc{border-bottom:1px solid var(--line)}
+.acc>summary{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:center;padding:24px 4px;cursor:pointer;list-style:none;font-size:19px;font-weight:600;line-height:1.35;letter-spacing:-.014em;color:var(--navy-900);transition:color .25s var(--ease)}
+.acc>summary:hover{color:var(--navy-600)}
+.acc .pm{width:38px;height:38px;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line)}
+.acc[open]>summary .pm{box-shadow:none}
+.acc-body{padding:0 72px 28px 4px}
+.acc-body p{font-size:16.5px;color:var(--muted);max-width:66ch}
+
+/* footer */
+.foot{background:var(--navy-950);color:#C9D3E3;padding:64px 0 40px;font-size:14.5px}
+.foot-cols{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-h{color:#fff;font-size:17px;letter-spacing:-.012em;margin-bottom:12px}
+.foot p{margin-bottom:8px}
+.foot a{color:#E4EAF3;text-decoration-color:rgba(228,234,243,.35);text-underline-offset:4px}
+.foot a:hover{text-decoration-color:currentColor}
+.legal{border-top:1px solid rgba(255,255,255,.12);padding-top:22px;font-size:13px;line-height:1.6;color:#A3B0C4}
+
+/* mobile sticky CTA */
+.mbar{display:none}
+
+/* accordion motion (progressive: browsers without ::details-content open instantly) */
+@supports selector(::details-content){
+  :root{interpolate-size:allow-keywords}
+  details::details-content{block-size:0;overflow:clip;transition:block-size .5s var(--ease),content-visibility .5s allow-discrete}
+  details[open]::details-content{block-size:auto}
+}
+details[open] .case-body,details[open] .acc-body,details[open] .disc-body{animation:fadeUp .6s var(--ease)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* scroll reveal */
+.js [data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .9s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--d,0) * 90ms)}
+.js [data-reveal].is-in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js [data-reveal]{opacity:1;transform:none}
+  .steps::after,.step::after{transform:none!important}
+  .step-n{background:var(--navy-700);color:#fff}
+}
+
+/* tablet */
+@media (max-width:1100px){
+  .cases{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .case>summary{min-height:132px}
+  .hero-grid,.fees-grid,.reg-grid{gap:48px}
+  .faq-grid{gap:48px}
+}
+@media (max-width:920px){
+  .links{display:none}
+  .hero-grid,.fees-grid,.reg-grid,.faq-grid{grid-template-columns:1fr}
+  .date-card{grid-template-columns:1fr;gap:28px}
+  .faq-side{position:static}
+  .free-card{grid-template-columns:auto minmax(0,1fr)}
+  .free-links{grid-column:1/-1;flex-direction:row;flex-wrap:wrap}
+  .steps{grid-template-columns:1fr;gap:0;margin-top:40px}
+  .steps::before,.steps::after{display:none}
+  .step:not(:last-child)::before,.step:not(:last-child)::after{content:"";position:absolute;z-index:-1;left:25px;top:26px;bottom:-26px;width:2px}
+  .step:not(:last-child)::before{background:var(--line)}
+  .step:not(:last-child)::after{background:var(--navy-700);transform:scaleY(0);transform-origin:center top;transition:transform .5s var(--ease);transition-delay:calc(var(--i) * 260ms + 300ms)}
+  .steps.is-in .step::after{transform:scaleY(1)}
+  .step{display:grid;grid-template-columns:52px minmax(0,1fr);grid-template-rows:auto 1fr;gap:0 20px;padding-bottom:26px}
+  .step-n{grid-row:1/span 2}
+  .step:last-child{padding-bottom:0}
+  .step h3{margin-top:13px}
+  .step p{grid-column:2;margin-top:4px}
+  .tl li{grid-template-columns:1fr}
+  .tl li{position:relative}
+  .tl li::after{content:"";position:absolute;left:-1px;top:0;bottom:0;width:2px;background:var(--line)}
+  .tl li:first-child::after{top:26px}
+  .tl li:last-child::after{bottom:auto;height:26px}
+  .tl .tl-c::after{display:none}
+  .tl time{position:relative;text-align:left;padding:18px 0 0 34px}
+  .tl .tl-c{padding-top:4px}
+  .tl .tl-c::before{top:-19px}
+}
+
+/* phone */
+@media (max-width:720px){
+  :root{--gutter:18px;--header-h:60px}
+  body{font-size:16px;padding-bottom:88px}
+  .topbar{font-size:12.5px}
+  .topbar .wrap{min-height:34px}
+  .topbar-call{display:none}
+  .brand .name{font-size:17px}
+  .brand .by{font-size:12px}
+  .nav-actions .btn{display:none}
+  .nav-call{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--surface);box-shadow:inset 0 0 0 1px var(--line);color:var(--navy-800);font-size:19px;text-decoration:none}
+  .sec{padding:56px 0}
+  .lead{font-size:17px}
+  h2{font-size:clamp(1.75rem,1.2rem + 2.4vw,2.2rem)}
+  .hero{padding:40px 0 118px}
+  .tag{font-size:13px}
+  .hero h1{margin-top:18px;font-size:clamp(2.1rem,1.4rem + 3.2vw,2.6rem);letter-spacing:-.036em}
+  .hero-grid{margin-top:22px;gap:30px}
+  .sub{font-size:17px}
+  .ctas{margin-top:26px;gap:18px}
+  .ctas .btn{width:100%;justify-content:space-between}
+  .ctas .link-2{margin:0 auto}
+  .assure{padding:4px 20px}
+  .assure li{font-size:17px;padding:14px 0}
+  .tick{width:30px;height:30px;font-size:14px}
+  .date{margin-top:-90px}
+  .date-card{padding:32px 24px;border-radius:24px}
+  .date-big{font-size:clamp(3rem,2rem + 7vw,4.2rem)}
+  .date-body p{font-size:16px}
+  .step h3{font-size:18px}
+  .step p{font-size:15px}
+  .free-card{grid-template-columns:1fr;gap:18px;padding:26px 22px}
+  .free-badge{width:60px;height:60px;font-size:21px;box-shadow:0 0 0 6px rgba(31,107,74,.1)}
+  .free-links{flex-direction:column}
+  .free-links .btn{justify-content:space-between}
+  .cta-strip{border-radius:22px;padding:20px;flex-direction:column;align-items:stretch}
+  .cta-strip .btn{justify-content:space-between}
+  .mini-ticks{flex-direction:column;gap:6px}
+  .cases{grid-template-columns:1fr;gap:10px;margin-top:32px}
+  .case:hover{transform:none}
+  .case>summary{grid-template-columns:auto minmax(0,1fr) auto;grid-template-rows:auto;align-items:center;gap:14px;min-height:0;padding:16px 16px 16px 18px}
+  .case-t{grid-column:2;grid-row:1;font-size:16.5px}
+  .case .pm{grid-column:3;grid-row:1}
+  .case-body{padding:0 18px 18px}
+  .case-body p{font-size:15px}
+  .after-cta .btn{width:100%;justify-content:space-between}
+  .disc{border-radius:22px}
+  .disc>summary{grid-template-columns:1fr;gap:18px;padding:26px 22px;border-radius:22px}
+  .toggle{justify-self:start}
+  .mini{display:none}
+  .tl{padding:0 22px 28px}
+  .tl p{font-size:15px}
+  .ca .disc>summary{grid-template-columns:auto minmax(0,1fr);padding:22px}
+  .ca .toggle{grid-column:1/-1}
+  .ca-ic{width:48px;height:48px;border-radius:14px;font-size:23px}
+  .ca-body{padding:0 22px 24px}
+  .ca-card{grid-template-columns:1fr}
+  .scam{grid-template-columns:1fr;gap:12px;padding:22px}
+  .scam-ic{width:40px;height:40px;font-size:19px}
+  .scam h2{font-size:19px}
+  .scam p{font-size:15px}
+  .fee-card{padding:30px 22px;border-radius:24px}
+  .fig+.fig{padding-left:18px}
+  .fig-c{font-size:13.5px}
+  .fee-list li{font-size:15px}
+  .fee-note .btn{width:100%;justify-content:space-between}
+  .slot{padding:22px}
+  .ghost{padding:18px;margin:22px 0 24px}
+  .g-row{grid-template-columns:1fr}
+  .slot .btn{width:100%;justify-content:space-between}
+  .faq-side .btn{width:100%;justify-content:space-between}
+  .acc>summary{font-size:17px;padding:20px 2px;gap:16px}
+  .acc .pm{width:34px;height:34px}
+  .acc-body{padding:0 8px 22px 2px}
+  .acc-body p{font-size:15.5px}
+  .foot{padding:48px 0 32px}
+  .foot-cols{grid-template-columns:1fr;gap:28px}
+  .mbar{display:flex;position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));z-index:var(--z-mbar);gap:10px;padding:8px;border-radius:999px;background:rgba(15,35,64,.86);backdrop-filter:blur(16px) saturate(160%);-webkit-backdrop-filter:blur(16px) saturate(160%);box-shadow:inset 0 1px 0 rgba(255,255,255,.12),0 18px 40px -16px rgba(11,26,48,.7);transform:translateY(140%);transition:transform .6s var(--spring)}
+  .mbar.is-shown{transform:none}
+  .mbar .btn{flex:1;justify-content:space-between}
+  .mbar-call{width:50px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#fff;font-size:20px;text-decoration:none;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="topbar"><div class="wrap">
+  <p>A service of <strong>Banton Group</strong>, class action and litigation lawyers, Sydney</p>
+  <a class="topbar-call" href="tel:+61280768090">Call <strong>(02) 8076 8090</strong></a>
+</div></div>
+
+<header class="header" id="top"><div class="wrap">
+  <a class="brand" href="#top"><span class="name">First Guardian Complaints</span><span class="by">Help with AFCA and CSLR claims, from Banton Group</span></a>
+  <nav class="links" aria-label="Primary">
+    <a href="#how">How it works</a><a href="#when">When we can help</a><a href="#fees">Fees</a><a href="#faq">Questions</a>
+  </nav>
+  <div class="nav-actions">
+    <a class="btn btn-primary btn-sm" href="#register">Free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+    <a class="nav-call" href="tel:+61280768090" aria-label="Call (02) 8076 8090"><i class="ph ph-phone" aria-hidden="true"></i></a>
+  </div>
+</div></header>
+
+<main id="main">
+
+<!-- 2. Hero -->
+<section class="hero">
+  <div class="wrap">
+    <p class="tag" data-reveal><i class="ph ph-vault" aria-hidden="true"></i>First Guardian Master Fund (Falcon Capital)</p>
+    <h1 data-reveal style="--d:1">Lost superannuation in the First Guardian Master Fund?</h1>
+    <div class="hero-grid">
+      <div data-reveal style="--d:2">
+        <p class="sub">Make sure your complaint to AFCA is complete, correct and made in time. We will assess your position free of charge, and act for you on a no win, no fee basis where our help will make a difference.</p>
+        <div class="ctas">
+          <a class="btn btn-primary btn-lg" href="#register">Get a free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+          <a class="link-2" href="#free">Or complain yourself, for free <i class="ph ph-arrow-down" aria-hidden="true"></i></a>
+        </div>
+      </div>
+      <div class="shell" data-reveal style="--d:3">
+        <ul class="assure core">
+          <li><span class="tick"><i class="ph-bold ph-check" aria-hidden="true"></i></span>Free assessment</li>
+          <li><span class="tick"><i class="ph-bold ph-check" aria-hidden="true"></i></span>Nothing to pay upfront</li>
+          <li><span class="tick"><i class="ph-bold ph-check" aria-hidden="true"></i></span>No win, no fee</li>
+        </ul>
+        <div class="assure-foot">
+          <a class="call" href="tel:+61280768090"><i class="ph ph-phone" aria-hidden="true"></i>Call (02) 8076 8090</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. The date that matters -->
+<section class="date" aria-labelledby="date-k">
+  <div class="wrap">
+    <div class="date-card" data-reveal>
+      <div>
+        <p class="date-k" id="date-k"><i class="ph ph-calendar-blank" aria-hidden="true"></i>The date that matters</p>
+        <p class="date-big">1 July <span class="yr">2027</span></p>
+      </div>
+      <div class="date-body">
+        <p>If your adviser's business has collapsed, the Compensation Scheme of Last Resort can pay an AFCA award up to $150,000. The Government has announced that for complaints made after 30 June 2027 the Scheme is to pay only actual losses, not the returns you would otherwise have earned. Lodging before then keeps your full claim open.</p>
+        <p class="fine">Source: Treasury fact sheet, 18 August 2026. The change has been announced but is not yet law.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. How it works -->
+<section class="sec" id="how">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="label">How it works</span>
+      <h2>Five steps</h2>
+    </div>
+    <ol class="steps" data-reveal>
+      <li class="step" style="--i:0"><span class="step-n" aria-hidden="true">1</span><h3>Tell us about it</h3><p>Complete the form and upload any statements, advice documents or letters you have.</p></li>
+      <li class="step" style="--i:1"><span class="step-n" aria-hidden="true">2</span><h3>Free assessment</h3><p>We tell you whether you need us. If you do not, we say so and point you to free help.</p></li>
+      <li class="step" style="--i:2"><span class="step-n" aria-hidden="true">3</span><h3>We prepare your complaint</h3><p>If we act, we identify every responsible firm and prepare and lodge your complaint with AFCA.</p></li>
+      <li class="step" style="--i:3"><span class="step-n" aria-hidden="true">4</span><h3>We deal with AFCA</h3><p>We respond to the firms and to AFCA and check AFCA's loss calculation.</p></li>
+      <li class="step" style="--i:4"><span class="step-n" aria-hidden="true">5</span><h3>The Scheme, if needed</h3><p>If your adviser cannot pay, we make your claim to the Compensation Scheme of Last Resort.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- 5. AFCA is free (always open) + CTA -->
+<section class="sec free" id="free" aria-labelledby="free-h">
+  <div class="wrap">
+    <div class="free-card" data-reveal>
+      <div class="free-badge" aria-hidden="true">$0</div>
+      <div>
+        <h2 id="free-h">You can complain to AFCA yourself, and it is free</h2>
+        <p>AFCA does not charge you, and you do not need a lawyer to use it. ASIC has funded a free online tool to help you prepare a complaint. If your situation is straightforward, we will tell you so and point you to these resources rather than act for you.</p>
+      </div>
+      <div class="free-links">
+        <a class="btn btn-quiet" href="https://www.afca.org.au" target="_blank" rel="noopener">afca.org.au <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+        <a class="btn btn-quiet" href="https://takeyoursuperback.com" target="_blank" rel="noopener">takeyoursuperback.com <i class="ph ph-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+    </div>
+    <div class="cta-strip" data-reveal>
+      <ul class="mini-ticks">
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Free assessment</li>
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i>Nothing to pay upfront</li>
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i>No win, no fee</li>
+      </ul>
+      <a class="btn btn-primary" href="#register">Get a free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 6. Some complaints are not straightforward (accordion cards) -->
+<section class="sec when" id="when">
+  <div class="wrap">
+    <div class="sec-head" data-reveal>
+      <span class="label">When our help is worth having</span>
+      <h2>Some complaints are not straightforward</h2>
+      <p class="lead">These are the situations where a lawyer is most likely to change the outcome for First Guardian investors. If one of them applies to you, ask us for a free assessment.</p>
+    </div>
+    <div class="cases" data-reveal>
+      <details class="case"><summary><span class="case-n mono">01</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">You invested through a Diversa fund</span></summary><div class="case-body"><p>Members of Diversa-trusteed funds, such as Australian Practical Super and the Powerwrap, MAP and Praemium options, have not been repaid. ASIC is suing Diversa.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">02</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">You invested through NQ Super</span></summary><div class="case-body"><p>Equity Trustees members who invested in First Guardian have not been repaid. ASIC is suing the trustee, but that case will not be heard before 2027.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">03</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">Netwealth repaid your capital</span></summary><div class="case-body"><p>You may still be owed the returns you would have earned in your old fund. We check the comparison AFCA uses.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">04</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">You were advised through InterPrac</span></summary><div class="case-body"><p>Venture Egg and Rhys Reilly advised under InterPrac's licence. AFCA has paused decisions on InterPrac complaints while InterPrac's court case against AFCA runs.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">05</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">More than one adviser or platform</span></summary><div class="case-body"><p>Every responsible firm needs to be identified and included in your complaint, or you may leave compensation behind.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">06</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">You used an SMSF</span></summary><div class="case-body"><p>Your fund is the complainant, and the cost of winding up the SMSF can form part of the claim.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">07</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">Your loss is over $150,000, or you lost insurance</span></summary><div class="case-body"><p>The Scheme's cap is $150,000, and life, TPD or trauma cover lost on the switch can be part of the claim. We look at what else can be recovered.</p></div></details>
+      <details class="case"><summary><span class="case-n mono">08</span><span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span><span class="case-t">You are in a class action or offered a deed</span></summary><div class="case-body"><p>We check how the Netwealth class action affects your complaint, and whether any deed or settlement asks you to give up other rights, including rights against Diversa.</p></div></details>
+    </div>
+    <div class="after-cta" data-reveal>
+      <a class="btn btn-primary" href="#register">Get a free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+      <a class="call" href="tel:+61280768090"><i class="ph ph-phone" aria-hidden="true"></i>Call (02) 8076 8090</a>
+    </div>
+  </div>
+</section>
+
+<!-- 7. Where things stand (collapsible) -->
+<section class="sec" id="status">
+  <div class="wrap" data-reveal>
+    <details class="disc">
+      <summary>
+        <div>
+          <span class="label">Where things stand</span>
+          <h2>What has happened with First Guardian</h2>
+        </div>
+        <span class="toggle"><span class="t-closed">View timeline</span><span class="t-open">Hide timeline</span><i class="ph-bold ph-caret-down" aria-hidden="true"></i></span>
+        <ol class="mini mono" aria-hidden="true">
+          <li>February 2025</li><li>April 2025</li><li>December 2025</li><li>January 2026</li><li>May and July 2026</li><li>Now</li>
+        </ol>
+      </summary>
+      <div class="disc-body">
+        <ol class="tl">
+          <li><time class="mono">February 2025</time><div class="tl-c"><h3>ASIC freezes Falcon's assets</h3><p>The Federal Court froze the assets of Falcon Capital, First Guardian's responsible entity.</p></div></li>
+          <li><time class="mono">April 2025</time><div class="tl-c"><h3>Falcon wound up</h3><p>The Court ordered Falcon to be wound up and appointed liquidators to wind up First Guardian. The liquidators have warned that recoveries may be small.</p></div></li>
+          <li><time class="mono">December 2025</time><div class="tl-c"><h3>ASIC sues Diversa</h3><p>ASIC is suing Diversa over about $300 million invested in First Guardian, seeking compensation for members.</p></div></li>
+          <li><time class="mono">January 2026</time><div class="tl-c"><h3>Netwealth repays capital</h3><p>Netwealth paid about $101 million to members who invested in First Guardian.</p></div></li>
+          <li><time class="mono">May and July 2026</time><div class="tl-c"><h3>More ASIC cases</h3><p>ASIC sued Equity Trustees over NQ Super members' investments, and sued First Guardian's auditor over its audit reports.</p></div></li>
+          <li><time class="mono">Now</time><div class="tl-c"><h3>AFCA and the Scheme</h3><p>InterPrac complaints are paused until at least February 2027, other complaints continue, and the Scheme is waiting for funding.</p></div></li>
+        </ol>
+      </div>
+    </details>
+    <p class="fine updated">Last updated 29 September 2026. Sources: ASIC, AFCA and CSLR publications and court records.</p>
+  </div>
+</section>
+
+<!-- 8. Fees (always visible) -->
+<section class="sec" id="fees" style="padding-top:0">
+  <div class="wrap fees-grid">
+    <div class="fee-card" data-reveal>
+      <h2>No win, no fee</h2>
+      <p class="fee-up">Nothing to pay upfront.</p>
+      <div class="figs">
+        <p class="fig"><span class="fig-n">$0</span><span class="fig-c">upfront</span></p>
+        <p class="fig"><span class="fig-n">$5,000</span><span class="fig-c">Fixed fee, including GST</span></p>
+      </div>
+      <ul class="fee-list">
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i><span><strong>Free</strong> initial assessment.</span></li>
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i><span>A <strong>fixed fee of $5,000, including GST</strong>, agreed in writing before we start.</span></li>
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i><span>Payable <strong>only from compensation</strong> you receive. If you receive nothing, you pay nothing.</span></li>
+        <li><i class="ph-bold ph-check" aria-hidden="true"></i><span>You have <strong>five business days</strong> to change your mind after signing.</span></li>
+      </ul>
+    </div>
+    <div class="fee-note" data-reveal style="--d:1">
+      <span class="label">About our fees</span>
+      <h2>What you are paying for</h2>
+      <p>AFCA and the Compensation Scheme of Last Resort do not charge you. Our fee is for our work on your complaint, not for access to AFCA.</p>
+      <p>Where a complaint is complex, we will ask AFCA to order the financial firm to contribute to your legal costs. AFCA usually caps a contribution at $5,000 and does not always make one. Any contribution reduces what you pay us.</p>
+      <p>We only take on a complaint where the likely compensation is well above our fee. Before you sign anything we will give you a written costs agreement and disclosure explaining the fee, when it is payable and your rights.</p>
+      <a class="btn btn-primary" href="#register">Get a free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- 9. Class actions already filed (collapsible) -->
+<section class="sec ca" id="class-actions">
+  <div class="wrap" data-reveal>
+    <details class="disc">
+      <summary>
+        <span class="ca-ic" aria-hidden="true"><i class="ph ph-scales"></i></span>
+        <div>
+          <span class="label">Class actions</span>
+          <h2>Class actions already filed</h2>
+        </div>
+        <span class="toggle"><span class="t-closed">Learn more</span><span class="t-open">Show less</span><i class="ph-bold ph-caret-down" aria-hidden="true"></i></span>
+      </summary>
+      <div class="disc-body ca-body">
+        <p class="lead">Another law firm has started this class action against Netwealth. We are not acting in it. If you are a group member, we will check how it affects your complaint. No class action has been filed for Diversa or NQ Super members.</p>
+        <dl class="ca-card">
+          <div><dt>Proceeding</dt><dd><em>Langby v Netwealth Investments Limited</em></dd></div>
+          <div><dt>Court</dt><dd>Supreme Court of Victoria, S ECI 2026 06462</dd></div>
+          <div><dt>Law firm</dt><dd>Keily McCrosson</dd></div>
+          <div><dt>Who it covers</dt><dd>Netwealth Superannuation Fund members who invested in First Guardian between 26 March 2021 and 27 May 2024</dd></div>
+        </dl>
+        <p class="fine">Current at 29 September 2026, from court records and the firm's published information.</p>
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- 10. Beware of recovery scams (compact, always visible) -->
+<section class="scam-sec" aria-labelledby="scam-h">
+  <div class="wrap">
+    <div class="scam" role="note" data-reveal>
+      <span class="scam-ic" aria-hidden="true"><i class="ph-bold ph-warning"></i></span>
+      <div>
+        <h2 id="scam-h">Beware of recovery scams</h2>
+        <p>ASIC has warned about people offering to recover lost superannuation in return for money paid in advance or a share of your compensation. We will never ask you for an upfront payment, a deposit, a bond or a "tax". Banton Group is a law practice regulated in New South Wales. If you are unsure whether a message is from us, call our office on <a href="tel:+61280768090">(02) 8076 8090</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11. Free assessment form (space reserved; simplified form supplied separately) -->
+<section class="sec reg" id="register">
+  <div class="wrap reg-grid">
+    <div class="reg-copy" data-reveal>
+      <span class="label">Free assessment</span>
+      <h2>Tell us about your First Guardian investment</h2>
+      <p class="lead">It takes about five minutes. We will review what you send and contact you within five business days. Sending us your details does not commit you to anything.</p>
+      <p class="lead">If you have already complained to AFCA, include your AFCA complaint number and we will review where it has got to.</p>
+      <a class="call" href="tel:+61280768090"><i class="ph ph-phone" aria-hidden="true"></i>Call (02) 8076 8090</a>
+    </div>
+    <div class="shell" data-reveal style="--d:1">
+      <div class="core slot" role="region" aria-label="Assessment form placeholder">
+        <span class="slot-tag"><i class="ph ph-pencil-simple-line" aria-hidden="true"></i>Form placeholder</span>
+        <p class="slot-note">The simplified form will be supplied separately. This space is reserved for it.</p>
+        <div class="ghost" aria-hidden="true">
+          <div class="g-row"><div class="g-f"><span class="g-l"></span><span class="g-in"></span></div><div class="g-f"><span class="g-l"></span><span class="g-in"></span></div></div>
+          <div class="g-row"><div class="g-f"><span class="g-l"></span><span class="g-in"></span></div><div class="g-f"><span class="g-l"></span><span class="g-in"></span></div></div>
+          <div class="g-f"><span class="g-l" style="width:28%"></span><span class="g-in tall"></span></div>
+        </div>
+        <span class="btn btn-primary" aria-disabled="true">Send for free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 12. Common questions (accordion) -->
+<section class="sec" id="faq">
+  <div class="wrap faq-grid">
+    <div class="faq-side" data-reveal>
+      <span class="label">Questions</span>
+      <h2>Common questions</h2>
+      <a class="btn btn-primary" href="#register">Get a free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+      <a class="call" href="tel:+61280768090"><i class="ph ph-phone" aria-hidden="true"></i>Call (02) 8076 8090</a>
+    </div>
+    <div class="acc-list" data-reveal style="--d:1">
+      <details class="acc"><summary>Do I need a lawyer to complain to AFCA?<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>No. AFCA is free and designed to be used without a lawyer. We act only where your circumstances make our involvement worthwhile, and we will tell you if they do not.</p></div></details>
+      <details class="acc"><summary>I invested through a Diversa fund and have not been repaid.<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>You can complain to AFCA about your adviser now. ASIC's case against Diversa seeks compensation for members, but the trustee is defending it.</p></div></details>
+      <details class="acc"><summary>Netwealth repaid my money. Do I still have a claim?<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>Possibly. AFCA's approach is to put you where you would have been in your previous fund, which can include lost returns after allowing for the repayment.</p></div></details>
+      <details class="acc"><summary>My adviser was with Venture Egg or Rhys Reilly. What now?<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>They advised under InterPrac's licence. AFCA is still accepting and investigating InterPrac complaints, but will not make decisions until InterPrac's case against AFCA ends. Make your complaint now so it is in the queue.</p></div></details>
+      <details class="acc"><summary>Will I get anything from First Guardian itself?<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>The liquidators are pursuing recoveries but have warned investors to expect little. A complaint against your adviser does not depend on those recoveries.</p></div></details>
+      <details class="acc"><summary>How much will it cost me?<span class="pm" aria-hidden="true"><i class="ph-bold ph-plus"></i></span></summary><div class="acc-body"><p>Nothing upfront, and nothing if your complaint does not succeed. If you receive compensation, our fixed fee is $5,000 including GST, paid from that compensation. AFCA itself is free.</p></div></details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- 13. Footer (content unchanged) -->
+<footer class="foot"><div class="wrap">
+  <div class="foot-cols">
+    <div><h2 class="foot-h">Banton Group</h2><p>Level 12, 60 Martin Place<br>Sydney NSW 2000</p><p><a href="tel:+61280768090">(02) 8076 8090</a></p></div>
+    <div><h2 class="foot-h">Free help</h2><p>Australian Financial Complaints Authority: <a href="https://www.afca.org.au" target="_blank" rel="noopener">afca.org.au</a></p><p>Take Your Super Back: <a href="https://takeyoursuperback.com" target="_blank" rel="noopener">takeyoursuperback.com</a></p><p>Compensation Scheme of Last Resort: <a href="https://cslr.org.au" target="_blank" rel="noopener">cslr.org.au</a></p></div>
+    <div><h2 class="foot-h">This site</h2><p><a href="#privacy">Privacy Collection Statement</a></p><p><a href="#terms">Terms of use</a></p><p>Last updated 29 September 2026</p></div>
+  </div>
+  <div class="legal">This site is operated by Banton Group, an incorporated legal practice. It gives general information only and is not legal advice about your circumstances. Banton Group is not ASIC, AFCA or the Compensation Scheme of Last Resort, and is not affiliated with Falcon Capital, Diversa, Netwealth, Equity Trustees or any adviser or licensee. Past outcomes do not guarantee future results. Liability limited by a scheme approved under Professional Standards Legislation.</div>
+</div></footer>
+
+<!-- Mobile: sticky Free assessment bar -->
+<div class="mbar">
+  <a class="btn btn-primary" href="#register">Free assessment <span class="btn-ic"><i class="ph-bold ph-arrow-right" aria-hidden="true"></i></span></a>
+  <a class="mbar-call" href="tel:+61280768090" aria-label="Call (02) 8076 8090"><i class="ph ph-phone" aria-hidden="true"></i></a>
+</div>
+
+<script>
+(function(){
+  var hasIO='IntersectionObserver' in window;
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* scroll reveal */
+  var els=[].slice.call(document.querySelectorAll('[data-reveal]'));
+  if(!hasIO||reduce){els.forEach(function(e){e.classList.add('is-in')})}
+  else{
+    var io=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){if(en.isIntersecting){en.target.classList.add('is-in');io.unobserve(en.target)}});
+    },{rootMargin:'0px 0px -8% 0px',threshold:.12});
+    els.forEach(function(e){io.observe(e)});
+  }
+
+  /* mobile sticky CTA: hidden while the hero CTA or the form itself is on screen */
+  var bar=document.querySelector('.mbar'),hero=document.querySelector('.hero'),reg=document.getElementById('register');
+  var heroIn=true,regIn=false;
+  function upd(){bar.classList.toggle('is-shown',!heroIn&&!regIn)}
+  if(hasIO){
+    new IntersectionObserver(function(e){heroIn=e[0].isIntersecting;upd()}).observe(hero);
+    new IntersectionObserver(function(e){regIn=e[0].isIntersecting;upd()},{threshold:.2}).observe(reg);
+  }else{bar.classList.add('is-shown')}
+
+  /* current section in the nav */
+  var links={};
+  [].forEach.call(document.querySelectorAll('.links a'),function(a){links[a.getAttribute('href').slice(1)]=a});
+  if(hasIO){
+    var navIO=new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        var a=links[en.target.id];if(!a)return;
+        if(en.isIntersecting){for(var k in links)links[k].removeAttribute('aria-current');a.setAttribute('aria-current','true')}
+      });
+    },{rootMargin:'-45% 0px -50% 0px'});
+    Object.keys(links).forEach(function(id){var s=document.getElementById(id);if(s)navIO.observe(s)});
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import "tailwindcss";
+
+/*
+  Design tokens
+  Radius rule: shells 26px, panels and dark cards 22-28px, small cards 16px, inputs 10px,
+  every button and chip is a full pill.
+  One accent (signal amber) for primary CTAs and key figures. Green and red are semantic only
+  (AFCA is free / scam warning).
+*/
+@theme {
+  --font-sans: "Geist Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono Variable", ui-monospace, monospace;
+
+  --color-navy-950: #0b1a30;
+  --color-navy-900: #0f2340;
+  --color-navy-800: #132946;
+  --color-navy-700: #1c3a64;
+  --color-navy-600: #2a4e80;
+  --color-ink: #0e1a2b;
+  --color-muted: #4e5a6c;
+  --color-soft: #6a7587;
+  --color-line: #dce2eb;
+  --color-line-soft: #e8ecf2;
+  --color-line-strong: #c3ccd9;
+  --color-page: #fafbfc;
+  --color-tint: #f1f4f8;
+  --color-tint-hover: #e6ebf2;
+  --color-accent: #f2b544;
+  --color-accent-hover: #f6c565;
+  --color-accent-ink: #8a5800;
+  --color-accent-wash: #fdf3df;
+  --color-accent-soft: #f7d899;
+  --color-on-navy: #d5dde9;
+  --color-on-navy-soft: #a9b6c9;
+  --color-footer: #c9d3e3;
+  --color-footer-soft: #a3b0c4;
+  --color-green: #1f6b4a;
+  --color-green-ink: #174f37;
+  --color-green-body: #29423a;
+  --color-green-soft: #e9f4ee;
+  --color-green-line: #cbe3d5;
+  --color-red: #a12d2d;
+  --color-red-ink: #7e2222;
+  --color-red-body: #4a2626;
+  --color-red-soft: #fbeeec;
+  --color-red-line: #f0d0cb;
+
+  --text-display: clamp(2.1rem, 1.2rem + 4.2vw, 4.1rem);
+  --text-display--line-height: 1.02;
+  --text-display--letter-spacing: -0.042em;
+  --text-h2: clamp(1.75rem, 1.2rem + 2.3vw, 3rem);
+  --text-h2--line-height: 1.06;
+  --text-h2--letter-spacing: -0.032em;
+  --text-h2-sm: clamp(1.5rem, 1.2rem + 1.1vw, 2.1rem);
+  --text-h2-sm--line-height: 1.15;
+  --text-h2-sm--letter-spacing: -0.025em;
+  --text-fee: clamp(2rem, 1.5rem + 2vw, 2.9rem);
+  --text-fee--line-height: 1.06;
+  --text-fee--letter-spacing: -0.032em;
+  --text-date: clamp(3rem, 1.6rem + 5.6vw, 6.6rem);
+  --text-date--line-height: 0.95;
+  --text-date--letter-spacing: -0.052em;
+  --text-figure: clamp(2.6rem, 2rem + 2.2vw, 3.8rem);
+  --text-figure--line-height: 1;
+  --text-figure--letter-spacing: -0.045em;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --shadow-card: 0 1px 2px rgb(15 35 64 / 0.05), 0 14px 34px -14px rgb(15 35 64 / 0.2);
+  --shadow-deep: inset 0 1px 0 rgb(255 255 255 / 0.08), 0 34px 70px -34px rgb(11 26 48 / 0.6);
+  --shadow-cta: inset 0 1px 0 rgb(255 255 255 / 0.55), 0 12px 26px -12px rgb(160 104 8 / 0.65);
+  --shadow-cta-hover: inset 0 1px 0 rgb(255 255 255 / 0.55), 0 16px 30px -12px rgb(160 104 8 / 0.7);
+  --shadow-bar: inset 0 1px 0 rgb(255 255 255 / 0.12), 0 18px 40px -16px rgb(11 26 48 / 0.7);
+  --shadow-tag: inset 0 0 0 1px var(--color-line), 0 4px 14px -8px rgb(15 35 64 / 0.25);
+}
+
+/* Layered backgrounds for the key surfaces */
+@utility surface-hero {
+  background:
+    radial-gradient(900px 520px at 88% -10%, rgb(42 78 128 / 0.13), transparent 70%),
+    radial-gradient(640px 380px at -8% 52%, rgb(242 181 68 / 0.12), transparent 70%),
+    linear-gradient(180deg, #edf1f6 0%, var(--color-page) 100%);
+}
+@utility surface-date {
+  background:
+    radial-gradient(640px 320px at 0% 0%, rgb(255 255 255 / 0.07), transparent 62%),
+    radial-gradient(520px 300px at 100% 100%, rgb(242 181 68 / 0.12), transparent 70%),
+    var(--color-navy-800);
+}
+@utility surface-fee {
+  background:
+    radial-gradient(560px 300px at 100% 0%, rgb(242 181 68 / 0.13), transparent 68%),
+    var(--color-navy-800);
+}
+@utility surface-afca {
+  background:
+    radial-gradient(520px 260px at 0% 0%, rgb(255 255 255 / 0.75), transparent 70%),
+    var(--color-green-soft);
+}
+
+@layer base {
+  html {
+    background: var(--color-page);
+    -webkit-text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-page font-sans text-base/[1.6] text-ink antialiased md:text-[17px];
+    text-rendering: optimizeLegibility;
+  }
+  /* Fixed film grain; pointer-events off so it never blocks interaction */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    opacity: 0.035;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-semibold text-navy-900;
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  strong {
+    @apply font-semibold;
+  }
+  :focus-visible {
+    outline: 3px solid var(--color-navy-600);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+    }
+  }
+}
